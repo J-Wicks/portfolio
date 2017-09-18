@@ -3,8 +3,11 @@ import 'animate.css/animate.css'; // CSS animation effects library (you can use 
 import Header from './Header.js';
 import SocialMedia from './SocialMedia.js';
 import Projects from './Projects.js';
-import Videos from './Videos'
+import Videos from './Videos';
+import Links from './Links.js';
+import { Sticky, StickyContainer } from 'react-sticky';
 import './App.css';
+
 
 class App extends Component {
   render() {
@@ -13,6 +16,10 @@ class App extends Component {
         <Header />
         <div id="body">
           <SocialMedia />
+          <Videos />
+          <Projects />
+          <Videos />
+          <Projects />
           <Videos />
           <Projects />
         </div>
