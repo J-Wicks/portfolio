@@ -5,11 +5,15 @@
 .App {
   text-align: center;
 }
-
+a {
+  color: black !important;
+}
 body {
   height: 120vh;
-  padding: 10vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
 }
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -23,6 +27,10 @@ body {
   margin: 30px;
 }
 
+#headerimage {
+  width: 75%;
+  height: auto;
+}
 .sectionHead {
   text-align: left;
   border-bottom: 1px solid;

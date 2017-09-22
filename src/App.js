@@ -18,10 +18,6 @@ class App extends Component {
           <SocialMedia />
           <Videos />
           <Projects />
-          <Videos />
-          <Projects />
-          <Videos />
-          <Projects />
         </div>
       </div>
     );

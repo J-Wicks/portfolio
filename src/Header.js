@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import { Sticky, StickyContainer } from 'react-sticky';
+import headerImg from './headerimg.jpg'
+
 class App extends Component {
   render() {
     return (
 
       <div id="header">
-        <h1> Jeremy Wicks</h1>
-          <ul id="links">
-            <li> Placeholder for link 1 </li>
-            <li> Placeholder for link 2 </li>
-            <li> Placeholder for link 3 </li>
-          </ul>
+        <img id="headerimage" src={headerImg} />
+        <ul id="links">
+          <li> <a href="#smLinks">Social Media</a></li>
+          <li> <a href="#projects">Projects</a> </li>
+          <li> <a href="#videos">Videos</a> </li>
+        </ul>
       </div>
     )
   }

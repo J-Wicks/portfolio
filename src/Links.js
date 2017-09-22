@@ -5,9 +5,9 @@ export default class Links extends Component {
   render() {
     return(
       <ul id="links">
-        <li> Placeholder for link 1 </li>
-        <li> Placeholder for link 2 </li>
-        <li> Placeholder for link 3 </li>
+        <li> <a href="#">Social Media</a></li>
+        <li> <a href="#">Projects</a> </li>
+        <li> <a href="#">Videos</a> </li>
       </ul>
       )
   }
