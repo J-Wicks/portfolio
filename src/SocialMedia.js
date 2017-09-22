@@ -11,12 +11,12 @@ const socials=[
 class SocialMedia extends Component {
   render() {
     return (
-      <div id="smLinks">
+      <div id="smLinks" className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <h1 className='sectionHead'> Social Media </h1>
         <Reveal effect="animated bounceIn">
           {
             socials.map(site => (
-              <div className='socialPanel col-lg-6 col-md-6 col-sm-7 col-xs-7'>
+              <div className='socialPanel col-lg-5 col-md-5 col-sm-7 col-xs-7'>
                 <a href={site.link}> 
                   <img className='icon' src={site.icon}/> {site.siteName}
                 </a>

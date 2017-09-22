@@ -6,8 +6,8 @@ class SocialMedia extends Component {
     return (
       <div id="projects">
         <h1 className='sectionHead'> Projects </h1>
-          <div className="projectCircle">
-            Ch
+          <div className="abbrevCircle">
+          <p>Ch</p>
           </div>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/Hhie8-Py3NM" frameborder="0" allowfullscreen></iframe>
       </div>
