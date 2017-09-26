@@ -8,6 +8,8 @@ import Links from './Links.js';
 import { Sticky, StickyContainer } from 'react-sticky';
 import './App.css';
 
+require('bootstrap')
+
 
 class App extends Component {
   render() {

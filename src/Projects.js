@@ -1,17 +1,48 @@
 import React, { Component } from 'react';
+import Project from './Project.js';
+import MiniProject from './MiniProject.js';
 import Reveal from 'react-reveal'; // this package
+import allProjects from './projectsArray.js';
 
 class SocialMedia extends Component {
+  constructor(){
+    super()
+    this.state = {
+      display: ['Ch'],
+    }
+  }
+
+  toggleProject (event) {
+    let newDisplay = [];
+    if(this.state.display.indexOf(event.target.name) > -1) {
+      newDisplay = this.state.display.filter(project => project !== event.target.name)
+    } else newDisplay.push(event.target.name)
+    this.setState({
+      display: newDisplay,
+    })
+  }
   render() {
     return (
         <section id="projects">
+
+          <h1 className='sectionHead'> Projects </h1>
           <li className='projectList'>
-            <h1 className='sectionHead'> Projects </h1>
-            <hr width="1" size="500" />
-            <div className="abbrevCircle">
-              <p>Ch</p>
-              </div>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/Hhie8-Py3NM" frameborder="0" allowfullscreen></iframe>
+            {
+              allProjects.map(project => {
+                if(this.state.display.indexOf(project.abbreviation) === -1) {
+                  return <MiniProject name={project.abbreviation} />
+                } else {
+                  return (
+                    <Project
+                      expand={this.state.display.indexOf('Ch') > -1}
+                      abbreviation={project.abbreviation}
+                      description={project.description}
+                      imageSource={project.imageSource}
+                    />
+                  )
+                }
+              })
+            }
           </li>
         </section>
     );
