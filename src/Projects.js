@@ -8,15 +8,17 @@ class SocialMedia extends Component {
   constructor(){
     super()
     this.state = {
-      display: ['Ch'],
+      display: [],
     }
+    this.toggleProject = this.toggleProject.bind(this)
   }
 
   toggleProject (event) {
-    let newDisplay = [];
+    console.log(event.target.value)
+    let newDisplay = this.state.display;
     if(this.state.display.indexOf(event.target.name) > -1) {
       newDisplay = this.state.display.filter(project => project !== event.target.name)
-    } else newDisplay.push(event.target.name)
+    } else newDisplay.push(event.target.value)
     this.setState({
       display: newDisplay,
     })
@@ -30,7 +32,7 @@ class SocialMedia extends Component {
             {
               allProjects.map(project => {
                 if(this.state.display.indexOf(project.abbreviation) === -1) {
-                  return <MiniProject name={project.abbreviation} />
+                  return <MiniProject clickHandler={this.toggleProject} name={project.abbreviation} />
                 } else {
                   return (
                     <Project

@@ -4,8 +4,8 @@ const MiniProject = (props) => (
   <div>
     <div className="abbrevCircle">
       <p>{props.name}</p>
-      <span className="projectDescription glyphicon glyphicon-triangle-right" />
     </div>
+      <button onClick={props.clickHandler} value={props.name} className="toggleArrow glyphicon glyphicon-triangle-right" />
   </div>
 )
 

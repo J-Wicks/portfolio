@@ -10,6 +10,20 @@ a {
   text-decoration: underline;
 }
 
+.projectHeader{
+  height: 60px;
+  border: 1px solid;
+  border-radius: 50px;
+}
+
+.projectHeader h2{
+  margin: 0px;
+  padding-top: 10px;
+}
+.toggleArrow {
+  float: left;
+}
+
 .abbrevCircle::before{
   content: '';
   position: absolute;
@@ -19,6 +33,7 @@ a {
   border-radius: 15px;
   z-index: -1;
 }
+
 
 hr {
   display: inline-block;
@@ -48,6 +63,7 @@ iframe {
     z-index: 100;
     background-color: black;
     color: pink;
+    float: left;
     text-align: center;
 
     font: 32px Arial, sans-serif;

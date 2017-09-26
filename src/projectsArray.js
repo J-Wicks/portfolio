@@ -2,7 +2,7 @@ module.exports = [
   {
     name: 'Charter',
     abbreviation: 'Ch',
-    description: 'This is a chart application. It\'s pretty cool',
+    description: 'This is a chart application. It\'s pretty cool This is a chart application. It\'s pretty cool This is a chart application. It\'s pretty cool This is a chart application. It\'s pretty cool This is a chart application. It\'s pretty cool This is a chart application. It\'s pretty cool',
     imageSource: 'https://media.giphy.com/media/xT9IgwpLDGQmaaaCAw/giphy.gif'
   },
   {
