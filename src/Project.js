@@ -7,6 +7,7 @@ const Project = (props) => (
         <p>{props.abbreviation}</p>
       </div>
       <h2> Project Name </h2>
+      <button onClick={props.clickHandler} value={props.abbreviation} className="toggleArrow glyphicon glyphicon-triangle-right" />
     </div>
     <div className="projectDescription">
       <p>

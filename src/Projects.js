@@ -16,8 +16,9 @@ class SocialMedia extends Component {
   toggleProject (event) {
     console.log(event.target.value)
     let newDisplay = this.state.display;
-    if(this.state.display.indexOf(event.target.name) > -1) {
-      newDisplay = this.state.display.filter(project => project !== event.target.name)
+    if(this.state.display.indexOf(event.target.value) > -1) {
+      newDisplay = this.state.display.filter(project => project !== event.target.value)
+      console.log("New Display", newDisplay)
     } else newDisplay.push(event.target.value)
     this.setState({
       display: newDisplay,
@@ -36,7 +37,7 @@ class SocialMedia extends Component {
                 } else {
                   return (
                     <Project
-                      expand={this.state.display.indexOf('Ch') > -1}
+                      clickHandler={this.toggleProject}
                       abbreviation={project.abbreviation}
                       description={project.description}
                       imageSource={project.imageSource}
