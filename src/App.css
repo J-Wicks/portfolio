@@ -4,10 +4,26 @@
 
 .App {
   text-align: center;
+  height: 100vh;
 }
 a {
   color: black !important;
   text-decoration: underline;
+}
+
+.miniProject {
+  height: 160px;
+  margin: 10px
+}
+
+.fullProject {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 100%
+}
+
+.fullProject img {
+  box-shadow: 5px 5px 5px black;
 }
 
 button {
@@ -48,13 +64,13 @@ hr {
 }
 
 body {
-  height: 120vh;
+  height: 100vh;
   padding-left: 10vh;
   padding-right: 10vh;
 }
 iframe {
   margin: 60px;
-  box-shadow: 0px 0px 80px -10px black
+  box-shadow: 5px 5px 5px black;
 }
 .abbrevCircle {
     margin-bottom: 50px;
@@ -79,6 +95,7 @@ iframe {
 .socialPanel {
   padding: 5px;
   border: 1px solid lightpink;
+  box-shadow: 5px 5px 5px pink;
   margin: 5px;
   border-radius: 10px;
 }
@@ -87,7 +104,11 @@ iframe {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
-
+.biopic {
+  float: left;
+  width: 150px;
+  height: auto;
+}
 #header h1 {
   font-family: 'Homemade Apple', cursive;
   font-size: 5em;
@@ -96,7 +117,7 @@ iframe {
 }
 
 #headerimage {
-  width: 75%;
+  width: 30%;
   height: auto;
 }
 .sectionHead {
@@ -106,15 +127,20 @@ iframe {
 #body {  
   padding-left: 20vh;
   padding-right: 20vh;
+  overflow: scroll;
+  height: 83vh;
 }
 
+.iFrame {
+  height: 250px
+}
 #videos iframe {
 
   height: 100%;
 }
 
 #videos {
-  padding: 0px;
+  padding-bottom: 75px;
 }
 #header ul{
 

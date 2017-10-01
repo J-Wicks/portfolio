@@ -1,9 +1,29 @@
 import React, { Component } from 'react';
 import Reveal from 'react-reveal'; // this package
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
 
 import Project from './Project';
 import MiniProject from './MiniProject';
-import allProjects from './projectsArray';
+import allProjects from './projects';
+
+const defaultProps = {
+  customClasses: true,
+
+  appear: true,
+  enter: true,
+  leave: true,
+
+  appearTimeout: 500,
+  enterTimeout: 500,
+  leaveTimeout: 500,
+
+  appearName: 'bounce',
+  appearActiveName: 'bounce',
+  enterName: 'bounce',
+  enterActiveName: 'bounce',
+  leaveName: 'bounceOut',
+  leaveActiveName: 'bounceOut'
+};
 
 class SocialMedia extends Component {
   constructor() {
@@ -27,25 +47,21 @@ class SocialMedia extends Component {
     return (
       <section id="projects">
         <h1 className="sectionHead"> Projects </h1>
-        <li className="projectList">
-          {
-            allProjects.map((project) => {
-              if (this.state.display.indexOf(project.abbreviation) === -1) {
-                return (
-                  <MiniProject clickHandler={this.toggleProject} name={project.abbreviation} />
-                );
-              }
+        {
+          allProjects.map((project) => {
+            if (this.state.display.indexOf(project.abbreviation) === -1) {
               return (
-                <Project
-                  clickHandler={this.toggleProject}
-                  abbreviation={project.abbreviation}
-                  description={project.description}
-                  imageSource={project.imageSource}
-                />
+                <MiniProject clickHandler={this.toggleProject} name={project.abbreviation} />
               );
-            })
-          }
-        </li>
+            }
+            return (
+              <Project
+                clickHandler={this.toggleProject}
+                project={project}
+              />
+            );
+          })
+        }
       </section>
     );
   }

@@ -1,25 +1,30 @@
 import React from 'react';
+import Reveal from 'react-reveal'; // this package
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
 
-const Project = props => (
-  <div>
-    <div className="projectHeader" >
-      <div className="abbrevCircle">
-        <p>{props.abbreviation}</p>
+const Project = props => {
+  const {title, imgSrc, abbreviation, description } = props.project
+  return (
+    <div className="fullProject">
+      <div className="projectHeader" >
+        <div className="abbrevCircle">
+          <p>{abbreviation}</p>
+        </div>
+        <h2> {title} </h2>
+        <button
+          onClick={props.clickHandler}
+          value={abbreviation}
+          className="toggleArrow glyphicon glyphicon-triangle-right"
+        />
       </div>
-      <h2> Project Name </h2>
-      <button
-        onClick={props.clickHandler}
-        value={props.abbreviation}
-        className="toggleArrow glyphicon glyphicon-triangle-right"
-      />
+      <div className="projectDescription">
+        <p>
+          {description}
+        </p>
+      </div>
+      <img alt="project gif"src={imgSrc} />
     </div>
-    <div className="projectDescription">
-      <p>
-        {props.description}
-      </p>
-    </div>
-    <img alt="project gif"src={props.imageSource} />
-  </div>
-)
+    )
+}
 
 export default Project;
