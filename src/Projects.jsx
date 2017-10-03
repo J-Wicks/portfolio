@@ -49,11 +49,6 @@ class SocialMedia extends Component {
         <h1 className="sectionHead"> Projects </h1>
         {
           allProjects.map((project) => {
-            if (this.state.display.indexOf(project.abbreviation) === -1) {
-              return (
-                <MiniProject clickHandler={this.toggleProject} name={project.abbreviation} />
-              );
-            }
             return (
               <Project
                 clickHandler={this.toggleProject}

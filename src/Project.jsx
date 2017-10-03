@@ -11,11 +11,6 @@ const Project = props => {
           <p>{abbreviation}</p>
         </div>
         <h2> {title} </h2>
-        <button
-          onClick={props.clickHandler}
-          value={abbreviation}
-          className="toggleArrow glyphicon glyphicon-triangle-right"
-        />
       </div>
       <div className="projectDescription">
         <p>

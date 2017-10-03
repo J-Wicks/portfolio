@@ -44,15 +44,6 @@ button {
   float: left;
 }
 
-.abbrevCircle::before{
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 4px;
-  background: black;
-  border-radius: 15px;
-  z-index: -1;
-}
 
 
 hr {
@@ -81,7 +72,7 @@ iframe {
     left:0px;
     width: 60px;
     height: 60px;
-    padding: 10px;
+    padding-top: 10px;
     z-index: 100;
     background-color: black;
     color: pink;
@@ -148,14 +139,24 @@ iframe {
   border-top: 1px solid;
 }
 
+.pad100 {
+  padding-left: 100px;
+}
+
 #links {
   position: sticky;
+  box-shadow: 5px 5px 5px black;
 
 }
 #links li{
   list-style: none;
   display: inline-block;
   margin: 10px;
+}
+
+.projectHeader {
+  box-shadow: 5px 5px 5px black;
+  margin-bottom: 20px;
 }
 
 .App-header {

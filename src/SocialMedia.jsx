@@ -12,7 +12,8 @@ const SocialMedia = () => {
   return (
     <div id="smLinks" className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <h1 className="sectionHead"> Social Media </h1>
-      <Reveal effect="animated bounceIn">
+      <Reveal effect="animated bounceIn" >
+        <div className="pad100">
         {
           socials.map(site => (
             <div className="socialPanel col-lg-5 col-md-5 col-sm-7 col-xs-7">
@@ -22,6 +23,7 @@ const SocialMedia = () => {
             </div>
           ))
         }
+        </div>
       </Reveal>
     </div>
   );
