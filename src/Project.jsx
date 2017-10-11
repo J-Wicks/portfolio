@@ -1,6 +1,4 @@
 import React from 'react';
-import Reveal from 'react-reveal'; // this package
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
 
 const Project = props => {
   const {title, imgSrc, abbreviation, description } = props.project

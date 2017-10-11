@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Reveal from 'react-reveal'; // this package
 import Iframe from 'react-iframe';
 

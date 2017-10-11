@@ -1,29 +1,7 @@
 import React, { Component } from 'react';
-import Reveal from 'react-reveal'; // this package
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
 
 import Project from './Project';
-import MiniProject from './MiniProject';
 import allProjects from './projects';
-
-const defaultProps = {
-  customClasses: true,
-
-  appear: true,
-  enter: true,
-  leave: true,
-
-  appearTimeout: 500,
-  enterTimeout: 500,
-  leaveTimeout: 500,
-
-  appearName: 'bounce',
-  appearActiveName: 'bounce',
-  enterName: 'bounce',
-  enterActiveName: 'bounce',
-  leaveName: 'bounceOut',
-  leaveActiveName: 'bounceOut'
-};
 
 class SocialMedia extends Component {
   constructor() {

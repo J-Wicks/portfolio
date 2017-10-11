@@ -1,7 +1,6 @@
 import React from 'react';
 import Reveal from 'react-reveal'; // this package
 import circleRender from './circleRender.png';
-import bioText from './biotext.js'
 
 
 const Bio = () => {

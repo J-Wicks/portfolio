@@ -14,15 +14,15 @@ const SocialMedia = () => {
       <h1 className="sectionHead"> Social Media </h1>
       <Reveal effect="animated bounceIn" >
         <div className="pad100">
-        {
-          socials.map(site => (
-            <div className="socialPanel col-lg-5 col-md-5 col-sm-7 col-xs-7">
-              <a href={site.link}> 
-                <img alt="social icon" className="icon" src={site.icon}/> {site.siteName}
-              </a>
-            </div>
-          ))
-        }
+          {
+            socials.map(site => (
+              <div className="socialPanel col-lg-5 col-md-5 col-sm-7 col-xs-7">
+                <a href={site.link}> 
+                  <img alt="social icon" className="icon" src={site.icon}/> {site.siteName}
+                </a>
+              </div>
+            ))
+          }
         </div>
       </Reveal>
     </div>
