@@ -1,14 +1,14 @@
 import React from 'react';
 
 const Project = props => {
-  const {title, imgSrc, abbreviation, description } = props.project
+  const {title, imgSrc, abbreviation, description, link } = props.project
   return (
     <div className="fullProject">
       <div className="projectHeader" >
         <div className="abbrevCircle">
           <p>{abbreviation}</p>
         </div>
-        <h2> {title} </h2>
+        <a href={link}><h2> {title} </h2> </a>
       </div>
       <div className="projectDescription">
         <p>

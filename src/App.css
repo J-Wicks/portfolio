@@ -23,16 +23,12 @@ a {
   height: 100%
 }
 
-.fullProject img {
-  box-shadow: 5px 5px 5px black;
-}
-
 button {
   border: none;
   background: none;
 }
 .projectHeader{
-  height: 60px;
+  height: 62px;
   border: 1px solid;
   border-radius: 50px;
 }
@@ -59,10 +55,10 @@ body {
   height: 100vh;
   padding-left: 10vh;
   padding-right: 10vh;
+  padding-bottom: 50px;
 }
 iframe {
   margin: 60px;
-  box-shadow: 5px 5px 5px black;
 }
 .abbrevCircle {
     margin-bottom: 50px;
@@ -87,7 +83,6 @@ iframe {
 .socialPanel {
   padding: 5px;
   border: 1px solid lightpink;
-  box-shadow: 5px 5px 5px pink;
   margin: 5px;
   border-radius: 10px;
 }
@@ -152,7 +147,7 @@ iframe {
 
 #links {
   position: sticky;
-  box-shadow: 5px 5px 5px black;
+
 
 }
 #links li{
@@ -162,7 +157,6 @@ iframe {
 }
 
 .projectHeader {
-  box-shadow: 5px 5px 5px black;
   margin-bottom: 20px;
 }
 
