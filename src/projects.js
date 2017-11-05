@@ -18,4 +18,10 @@ module.exports = [
     imgSrc: 'https://media.giphy.com/media/xT1R9DacwWxLQBLwJ2/giphy.gif',
     abbreviation: 'JF',
   },
+  {
+    title: 'Cooper\'s Garden',
+    description: `Coopers garden is an application that allows a teacher to store and present information about plants in the classroom for easy access by students`,
+    imgSrc: 'https://media.giphy.com/media/xUOxeUpLx2WqvycMww/giphy.gif',
+    abbreviation: 'CG',
+  }
 ]
